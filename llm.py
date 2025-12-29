@@ -8,6 +8,7 @@ from tool import tools
 from spider import Spider
 from typing import AsyncGenerator
 import asyncio
+from os import environ
 
 
 class LLM:
@@ -15,7 +16,7 @@ class LLM:
         self.llm = ChatOpenAI(
             model="deepseek-chat",
             base_url="https://api.deepseek.com",
-            api_key="sk-e1af2099a54e49d9a6139040750afafc",
+            api_key=environ["YOUR_API_KEY"],
             temperature=0,
         ).bind_tools(tools)
 
