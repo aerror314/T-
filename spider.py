@@ -8,8 +8,8 @@ from urllib.parse import urlencode
 from typing import Literal
 
 public_key = "04d0c9e1ae89279fe05b435d63e3eba437bf510e09da5f71558974a19dc596724227f08dc2fc6e74bbb9d8b468d4dd5205e9b6793a3bbc48df3fdf219b3ea140e3"
-finger_print = "b8d1ef2760eedac6b1aea370cf84ca38"  # 最后一位本来是6
-finger_gen_print = "1fc53a9910e84c3e9c8721201bb64bc3"  # 最后一位本来是1
+finger_print = "b8d1ef2760eedac6b1aea370cf84ca38"
+finger_gen_print = "1fc53a9910e84c3e9c8721201bb64bc3"
 
 
 class LoginError(Exception):
